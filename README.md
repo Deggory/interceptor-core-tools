@@ -766,3 +766,25 @@ use the web-based config tool available [here](https://coreconfig.retropilot.org
 full documentation and examples are available at the [RetroPilot Wiki](https://wiki.retropilot.org/index/hardware/ocelot):
 
 https://wiki.retropilot.org/index/hardware/ocelot
+
+## Joystick Steering Tool ✅
+
+### [joystick_steer.py](file:///home/d/retropilot/ocelot/joystick_steer.py)
+
+**Purpose**: Drive-by-wire steering using a USB Gamepad (Standalone / No OpenPilot required).
+
+**Features**:
+- Visual Steering Wheel GUI (requires `wheel.png`)
+- Direct CAN 0x300 Control
+- Differential Torque Mode
+- Safety Deadman Switch (Button 0)
+
+**Usage**:
+1. Plug in Chimera & USB Joystick
+2. Run:
+   ```bash
+   ./joystick_steer.py
+   ```
+3. Hold Button 0 to enabled, move Left Stick to steer.
+
+**Full Guide**: [joystick_steer_walkthrough.md](joystick_steer_walkthrough.md)
