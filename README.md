@@ -84,8 +84,8 @@ or, use the python-based console tool:
 install pipenv. setup the environment with:
 `pipenv install` 
 then enter the environment with:
-`pipenv shell`
-once inside, you can run `./stm_flash_config.py` to configure your device. select the device you'd like to configure and follow the wizard.
+pipenv shell
+once inside, you can run ` sudo ./stm_flash_config.py     ` to configure your device. select the device you'd like to configure and follow the wizard.
 
 ##### config tool options:
 
