@@ -275,7 +275,7 @@ if __name__ == "__main__":
         try:
           flash_entries = panda.flash_config_read()
           for entry in flash_entries:
-            if entry.get('index') == 0 and entry.get('cfg_type') == 'SYSTEM':
+            if entry.get('index') == 0 and entry.get('cfg_type') == 'SYS':
               current_mode = entry.get('mode', 0)
               break
         except:
